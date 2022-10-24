@@ -65,3 +65,6 @@ You can control the amount of penalty by controlling the lambda(λ) parameter in
 
 -   Model fit: Aim to minimize the model's prediction error (NRMSE or normalized root-mean-square error)
 -   Business fit: Aim to minimize decomposition distance (DECOMP.RSSD, decomposition root-sum-square distance). The distance accounts for a relationship between spend share and a channel's coefficient decomposition share. If the distance is too far, its result can be too unrealistic - e.g. media activity with the smallest spending gets the largest effect.
+
+### Model Calibration
+As mentioned above, we strongly recommend using experimental and causal results that are considered to be the ground truth to calibrate MMM.Calibration can increase your confidence when selecting the final model, especially when there is no strong prior knowledge of media effectiveness and performance. 
